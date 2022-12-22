@@ -1,0 +1,21 @@
+{
+  "extends": "@tsconfig/node18-strictest-esm/tsconfig.json",
+  "compilerOptions": {
+    "module": "es2022",
+    //    "moduleResolution": "NodeNext",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "incremental": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "index.ts",
+    "src/**/*",
+    "db/**/*"
+  ]
+}
